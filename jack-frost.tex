@@ -1,0 +1,207 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{datetime}
+\newdateformat{sanedate}{%
+\THEDAY{} \monthname[\THEMONTH] \THEYEAR}
+\sanedate
+
+\usepackage{ifpdf}
+\usepackage[left=2cm,top=2cm,right=2cm,bottom=2cm,nohead]{geometry}
+\usepackage{url}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\renewcommand{\rmdefault}{ugm} % garamond
+\frenchspacing
+
+\title{The Jack Frost Tune-Book}
+\author{\small Set down by Pontus Lurcock}
+% \date{\normalsize 1 November 2008}
+
+\ifpdf
+% The licence file will be copied from includes/ to out/
+% by the makefile.
+\usepackage{xmpincl}
+\includexmp{licence}
+\pdfinfo
+{ /Title (The Jack Frost Tune-Book)
+  /Author (Pontus Lurcock)
+  /CreationDate (D:20081020000000)
+  /ModDate (D:\pdfdate)
+  /Keywords (morris dancing)
+}
+\fi
+
+\begin{document}
+\maketitle
+\samepage
+
+\section*{Introduction}
+
+This book is chiefly intended as an aid to new and visiting musicians
+at Jack Frost Morris. It's possible that it will evolve into something
+more extensive, perhaps containing more details of the dances, but the
+main intent is that it provide a faster alternative to learning the
+Jack Frost repertoire by ear.
+
+I have written all the tunes down from memory, and there will
+doubtless be some errors and omissions; in any case it's impossible to
+provide a perfect snapshot of a living tradition. But I hope that this
+collection will nevertheless prove useful.
+
+The textual parts of this work were typeset in \LaTeX{}, and the tunes
+in GNU Lilypond.
+
+\subsection*{Notation}
+
+I have used standard musical notation as far as possible. The main
+addition is the method for indicating repeats of the A and B parts: I
+have simply set the number of repeats next to the mark for the part in
+the music, so that, for example, `A 1' and `B 3'  in {\it Dilwyn} mean
+`play the A part once, and the B part thrice'. Any further
+complications are noted after the tune.
+
+When there is a song, it is sung {\it a capella} by the whole side at
+the beginning, leading straight into the A part. Where there is no
+song, the A part is usually played through once as an introduction.
+
+Some tunes clearly go too low for a descant recorder or D whistle; in
+this case there is nothing for it but to go up an octave, or
+substitute something reasonable for the impossible notes.
+
+At present the overall structure of the tunes (i.e. the total number
+of repeats, variations in repetitions, and introductions for dances
+without songs) is not always given, and chords are not noted, expect
+for Dilwyn; I hope to remedy these shortcomings in a future edition.
+
+\subsection*{Copyright}
+
+The tunes, of course, are traditional, and belong to everyone. The 
+transcriptions are my own, however, and are governed by the following terms.
+
+This work is licensed under the Creative Commons
+Attribution-Noncommercial-Share Alike 3.0 New Zealand License. To view
+a copy of this license, visit
+\url{http://creativecommons.org/licenses/by-nc-sa/3.0/nz/} or send a
+letter to Creative Commons, 171 Second Street, Suite 300, San
+Francisco, California, 94105, USA.
+
+In summary, the licence states that you may copy, distribute,
+transmit, and adapt this work freely, provided that you attribute the
+work and do not use it for commercial purposes. And if you alter,
+transform, or build upon this work, you may distribute the resulting
+work only under the same or similar license to this one.
+
+\pagebreak[2]
+
+\section{Dilwyn}
+\lilypondfile[noindent]{tunes/dilwyn.ly}
+
+\noindent Notes: Jack Frost's signature dance. The lyrics may (reluctantly) be
+bowdlerized to `My friend Billy's got a ten-foot maypole' for genteel
+audiences. The volta marked `final' is only used right at the end of
+the dance (when the dancers jump out at the end of the star
+figure). The chords are the `traditional' ones, but some of the Ds
+also work well as Cs.
+
+\pagebreak[2]
+
+\section{Bean-setting (Badby)}
+\lilypondfile[noindent]{tunes/bean-setting.ly}
+\nopagebreak
+\noindent Notes: the song is original to Jack Frost. Two whole-bar rests are
+marked as an ossia for bars 17 and 18; these are substituted during
+the three repititions of the final bout of sticking (`windscreen
+wipers').
+\nopagebreak
+%\pagebreak[1]
+\section{Hindley Street}
+
+\lilypondfile[noindent]{tunes/hindley-street.ly}
+
+\noindent Notes: also known as the Air Traffic Controller Dance.
+Correct number of repeats for the B part varies from verse to verse
+and needs to be worked out at some point.
+
+\pagebreak[1]
+
+\section{The Black Joke}
+
+\lilypondfile[noindent]{tunes/the-black-joke.ly}
+
+\pagebreak[1]
+
+\section{Young Collins}
+
+\lilypondfile[noindent]{tunes/young-collins.ly}
+
+\noindent Notes: the song is original to Jack Frost.
+
+\pagebreak[2]
+
+\section{Lads a-Buncham}
+
+\lilypondfile[noindent]{tunes/lads-a-buncham.ly}
+
+\noindent Notes: the dance finishes with a {\bf double time} section,
+consisting of a single repeat of the B part played at double
+speed, or as near thereto as is practicable for the musicians
+and dancers.
+
+\pagebreak[2]
+
+\section{Horsham Butchers}
+
+\lilypondfile[noindent]{tunes/horsham-butchers.ly}
+
+\noindent Notes: the dance finishes with a {\bf double time} section,
+consisting of a single repeat of the B part played at double
+speed, or as near thereto as is practicable for the musicians
+and dancers. The song is original to Jack Frost.
+
+\pagebreak[2]
+
+\section{Upton-upon-Severn stick dance}
+
+\lilypondfile[noindent]{tunes/upton-upon-severn.ly}
+
+\noindent Notes: there is also an Upton-upon-Severn handkerchief dance, but 
+this of course has no place in Jack Frost's repertoire.
+
+\pagebreak[2]
+
+\section{Constant Billy}
+
+\lilypondfile[noindent]{tunes/constant-billy.ly}
+
+\pagebreak[4]
+
+\section{Woodhouse Bog}
+
+\lilypondfile[noindent]{tunes/woodhouse-bog.ly}
+
+\noindent Notes: no `special' repetition is required as an
+introduction: the musicians simply play the A part twice and B part
+twice as usual. The first couple dance on during the first playing of
+the B part, and commence sticking at its repeat. At the end of
+the dance, the last couple stick during the first playing of the B
+part, and dance off during the repeat.
+
+There is an unofficial song, but it is probably best left
+as an oral tradition.
+
+\section{The Muffin Man}
+
+\lilypondfile[noindent]{tunes/the-muffin-man.ly}
+
+\noindent Notes: {\it The Muffin Man} is often danced as the last dance of a
+set, as it segues quite nicely into an elegant departure from the
+scene for the whole side.  The lead musician plays at the centre of
+the set and takes part in the dance; any other musicians play at the
+head of the set as usual. At the end of the final figure ({\it
+  rounds}), the lead musician leads the dancers and other musicians
+wherever he or she pleases; the music continues until the lead
+musician stops playing, indicating that the dance is finished and the
+side has reached its destination (generally the nearest bar).
+
+\end{document}

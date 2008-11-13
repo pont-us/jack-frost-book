@@ -1,6 +1,7 @@
 syntax: regexp
 
 ^out/?.*
-^includes/.*\.xmpi
-.*\.aux
-.*\.log
+^includes/.*\.xmpi$
+\.aux$
+\.log$
+~$

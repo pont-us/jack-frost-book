@@ -12,7 +12,7 @@ e'4 a'4 a'4. g'8 | fis'4 d'4 d'2 |
 d'4 g'4 g'4. a'8 | b'4 g'4  g'4. fis'8 |
 e'4 a'4 fis'4 d'4 | g'1  |
 
-\mark "A"
+\mark "A *"
 \repeat volta 2 {
 d'4 g'4 g'4. a'8 | b'4 g'4  g'4. fis'8 |
 e'4 a'4 a'4. g'8 | fis'4 d'4 d'2 |
@@ -20,7 +20,7 @@ d'4 g'4 g'4. a'8 | b'4 g'4  g'4. fis'8 |
 e'4 a'4 fis'4 d'4 | g'1  |
 }
 
-\mark "B"
+\mark "B 2"
 \repeat volta 2 {
 d''2 d''4. c''8 | b'4 g'4 g'4. fis'8 |
 e'4 a'4 a'4. g'8 | fis'4 d'4 d'2  |

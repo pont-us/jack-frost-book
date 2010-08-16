@@ -1,0 +1,5 @@
+Garamond installation: sudo getnonfreefonts-sys garamond
+
+make.sh is not a proper makefile: a manual rm -r out/* is often necessary. (Or
+perhaps just rm out/jack-frost-book.tex sometimes?)
+

@@ -3,9 +3,9 @@
 <<
 
 \new ChordNames { 
-g1 d1 g1 d1 g1 d1 g2 d2 g1 
-g1 d1 g1 d1 g1 d1 g2 d2 g1 
-g1 d1 g1 d1 g1 d1 g2 d2 g1 
+r1 r1    r1 r1    r1 r1    r1    r1 
+g1 c2 d2 g1 c2 d2 g1 c2 d2 g2 d2 g1 
+g1 c2 d2 g1 c2 d2 g1 c2 d2 g2 d2 g1 
 g1
 }
 

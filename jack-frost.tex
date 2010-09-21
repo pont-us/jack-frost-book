@@ -34,6 +34,18 @@
 }
 \fi
 
+\makeatletter
+% no bold, thank you
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus.2ex}%
+                                   {\normalfont\Large}}
+\renewcommand\subsection{\@startsection {subsection}{1}{\z@}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus.2ex}%
+                                   {\normalfont\large\itshape}}
+\makeatother
+
 \begin{document}
 \maketitle
 \samepage
@@ -103,8 +115,7 @@ work only under the same or similar license to this one.
 bowdlerized to `My friend Billy's got a ten-foot maypole' for genteel
 audiences. The volta marked `final' is only used right at the end of
 the dance (when the dancers jump out at the end of the star
-figure). The chords are the `traditional' ones, but some of the Ds
-also work well as Cs.
+figure).
 
 \pagebreak[2]
 
@@ -167,7 +178,7 @@ repeats.
 
 \lilypondfile[noindent]{tunes/lads-a-buncham.ly}
 
-\noindent Notes: the dance finishes with a {\bf double time} section,
+\noindent Notes: the dance finishes with a {\it double time} section,
 consisting of a single repeat of the B part played at double
 speed, or as near thereto as is practicable for the musicians
 and dancers.
@@ -178,7 +189,7 @@ and dancers.
 
 \lilypondfile[noindent]{tunes/horsham-butchers.ly}
 
-\noindent Notes: the dance finishes with a {\bf double time} section,
+\noindent Notes: the dance finishes with a {\it double time} section,
 consisting of a single repeat of the B part played at double
 speed, or as near thereto as is practicable for the musicians
 and dancers. The song is original to Jack Frost.

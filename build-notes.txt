@@ -1,4 +1,18 @@
-Garamond installation: sudo getnonfreefonts-sys garamond
+Garamond installation for LaTeX: sudo getnonfreefonts-sys garamond
+
+Garamond installation for LilyPond:
+
+sudo apt-get install enscript
+mkdir ~/.fonts/afm
+cd ~/.fonts/afm
+[copy .pfb, .pfm, .afm files hither]
+mkfontscale
+mkfontdir
+mkafmmap *
+fc-cache -f -v
+
+[scale/dir perhaps inverted? See
+http://ubuntuforums.org/showthread.php?t=452955]
 
 make.sh is not a proper makefile: a manual rm -r out/* is often necessary. (Or
 perhaps just rm out/jack-frost-book.tex sometimes?)

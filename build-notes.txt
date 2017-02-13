@@ -1,16 +1,19 @@
-Garamond installation for LaTeX: sudo getnonfreefonts-sys garamond
+Garamond installation for LaTeX: 
+wget http://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts
+chmod a+x install-getnonfreefonts
+sudo ./install-getnonfreefonts
+sudo getnonfreefonts-sys garamond
+
 
 Garamond installation for LilyPond:
 
 sudo apt-get install enscript
 mkdir ~/.fonts/afm
 cd ~/.fonts/afm
-[copy .pfb, .pfm, .afm files hither from /usr/local/share/texmf/fonts ]
-[I see no pfm files. I think I meant tfm.]
+[copy .pfb, .tfm, .afm files into ~/.fonts/afm from various subdirectories of /usr/local/share/texmf/fonts . Yes, all of them directly into ~/.fonts/afm -- don't preserve the directory hierarchy.]
 mkfontscale
 mkfontdir
-mkafmmap *
-[crashes. mkafmmap *.afm, maybe?]
+mkafmmap *.afm
 fc-cache -f -v
 
 [scale/dir perhaps inverted? See

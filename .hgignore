@@ -1,9 +1,0 @@
-syntax: regexp
-
-^build$
-^build/.*
-^includes/.*\.xmpi$
-\.aux$
-\.log$
-\.pdf$
-~$

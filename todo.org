@@ -1,0 +1,11 @@
+* TODO Upton-upon-Severn tradition?
+Check what tradition, if any, Upton-upon-Severn fits into.
+* TODO Hindley street origin
+  Where's Hindley Street from? Is it definitely Border? Doesn't seem to
+  be a very well-known dance.
+* TODO Fix Dilwyn chords (more Cs).
+* TODO Use revision date, not build date, in output
+  The current LaTeX source uses the datetime package to insert the
+  current date under the document. However, it doesn't make much sense
+  to use the build date for this: it should be the current repository
+  revision date.

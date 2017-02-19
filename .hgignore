@@ -1,7 +1,9 @@
 syntax: regexp
 
-^out/?.*
+^build$
+^build/.*
 ^includes/.*\.xmpi$
 \.aux$
 \.log$
+\.pdf$
 ~$

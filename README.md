@@ -14,7 +14,7 @@ ConTeXt, but getting them to play nicely together was difficult.) In
 release the source.
 
 The collection comprises eleven tunes, with words where applicable, and
-a final sheet of calling cards summarizing the dances. There are
+a final sheet of calling cards summarizing the dances. These are
 intended to be cut out and used as pocket-sized cheat sheets by the
 Squire.
 
@@ -26,13 +26,18 @@ Ensure that LaTeX, Lilypond, and the Garamond font are correctly
 installed (see ‘Requirements’ below). Once the requirements are in
 place, simply run
 
-    ./make.sh
+    ./build.sh
 
-to clear any existing output files and rebuild the tune-book from scratch.
+to clear any existing intermediate and output files and rebuild the
+tune-book from scratch.
 
 ## Output files
 
-
+Running the build script will produce the output files `jack-frost.pdf`
+and `jack-frost-easynote.pdf`. The first is the standard tune-book; the
+second is a variant with ‘easynote’ notation, which places note names in
+the note heads on the score. A directory called `build` is also created,
+containing various intermediate files created during the build process.
 
 ### Requirements
 
